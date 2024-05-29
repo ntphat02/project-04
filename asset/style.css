@@ -105,6 +105,7 @@ a {
 }
 .hero__media {
   display: flex;
+  position: relative;
 }
 
 .hero__img {
@@ -146,4 +147,54 @@ a {
 .hero__decor--right {
   top: 17px;
   right: -54px;
+}
+.hero__list {
+  position: absolute;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+  padding: 18px 14px;
+  width: 250px;
+  height: 156px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  left: 129px;
+  bottom: -92px;
+}
+
+.hero-list-item {
+  display: flex;
+}
+
+.hero-list-item__thumb {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  background: #f7a70c52;
+  border-radius: 4px;
+}
+.hero-list-item__info {
+  margin-left: 9px;
+}
+
+.hero-list-item__skeleton {
+  margin-top: 7px;
+  width: 118px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  opacity: 0.08;
+  background: #000958;
+}
+
+.hero-list-item__skeleton:last-child {
+  margin-top: 6px;
+  width: 39px;
+  height: 4px;
+  flex-shrink: 0;
+}
+
+.hero-list-item__separate {
+  margin: 23px 0 22px 0px;
+  border: 2px solid #f2f2f2;
 }
