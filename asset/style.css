@@ -437,3 +437,146 @@ a {
   top: -38px;
   right: -30px;
 }
+
+/* service */
+.service {
+  margin-top: 101px;
+}
+
+.service__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 146px;
+  align-items: center;
+}
+
+.service__image {
+  position: relative;
+}
+
+.service__inner {
+  width: 458px;
+  margin-left: 0;
+  background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+  border: 2px solid #ffffff;
+  box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+  border-radius: 18px;
+}
+
+.service__img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.service__decor {
+  position: absolute;
+}
+
+.service__decor1:first-of-type {
+  top: 12px;
+  left: 398px;
+}
+
+.service__decor2:nth-of-type(2) {
+  top: -13px;
+  left: 423px;
+}
+
+.service__decor3:nth-of-type(3) {
+  top: 29px;
+  left: 434px;
+}
+
+.service__decor4:nth-of-type(4) {
+  top: 268px;
+  left: 465px;
+}
+
+.service__decor5:nth-of-type(5) {
+  top: 330px;
+  left: 413px;
+}
+
+.service__decor6:nth-of-type(6) {
+  top: 420px;
+  left: 380px;
+}
+
+.service__heading {
+  width: 543px;
+  color: #000958;
+  font-family: Sora;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.2; /* 119.231% */
+  color: #000958;
+  margin-bottom: 24px;
+}
+
+.service__desc {
+  margin-bottom: 50px;
+  width: 511px;
+  color: #656689;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.87; /* 187.5% */
+}
+
+.service__desc--small {
+  margin-top: 26px;
+  width: 391px;
+  color: #656689;
+  font-family: Poppins;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.71; /* 171.429% */
+}
+
+.service__link {
+  margin-top: 32px;
+  display: inline-block;
+  margin-top: 32px;
+  color: #ff5d31;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.service__link:hover {
+  text-decoration: underline;
+}
+
+.service-content__list {
+  display: flex;
+  column-gap: 56px;
+  position: relative;
+  padding-bottom: 14px;
+}
+
+.service-content__icon {
+  width: 18px;
+}
+
+.service-content__title {
+  margin-left: 12px;
+}
+
+.tab__item--active::after {
+  width: 95px;
+  opacity: 1;
+}
+
+.service-content__list::after,
+.tab__item--active::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #ff5b2e;
+  border-radius: 1px;
+  opacity: 0.07;
+}
