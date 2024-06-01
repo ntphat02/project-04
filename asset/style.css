@@ -580,3 +580,259 @@ a {
   border-radius: 1px;
   opacity: 0.07;
 }
+
+/* feature */
+.feature {
+  background: #fff6ed;
+  margin-top: 190px;
+  padding: 68px 0 100px;
+}
+
+.feature__desc {
+  color: #5e6085;
+  text-align: center;
+  font-family: Sora;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.feature__heading {
+  margin-top: 15px;
+  color: #000958;
+  text-align: center;
+  font-family: Sora;
+  font-size: 5.2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.feature__body {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 70px;
+}
+
+.feature-item {
+  padding: 30px 40px;
+  width: 294px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 188, 122, 0.26);
+  background: #fff;
+}
+
+.feature-item + .feature-item {
+  margin-top: 24px;
+}
+
+.feature-item__heading {
+  position: relative;
+  color: #000958;
+  font-family: Sora;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.feature-item__heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 2px;
+  height: 22px;
+  background: #ff5b2e;
+}
+
+.feature-item__desc {
+  margin-top: 18px;
+  width: 244px;
+  color: #656689;
+  font-family: Poppins;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.72;
+}
+
+.feature-item__link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 24px;
+  color: #34396a;
+  font-family: Sora;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.feature-item__icon {
+  margin-left: 6px;
+}
+
+.faeture__media {
+  position: relative;
+  margin-top: 18px;
+}
+
+.faeture__media::after {
+  content: "";
+  position: absolute;
+  height: 350px;
+  bottom: 89px;
+  left: 13px;
+  right: 13px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+}
+
+.feature__img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.feature__ctn {
+  margin-top: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature__cta {
+  --height: 56px;
+  min-width: 214px;
+  border: 1px solid #ff5b2e;
+  color: #ff5b2e;
+}
+/* staff */
+.staff {
+  padding: 130px 0;
+}
+
+.staff__desc {
+  color: #5e6085;
+  text-align: center;
+  font-family: Sora;
+  font-size: 1.6rem;
+  font-style: normal;
+}
+
+.staff__heading {
+  margin-top: 15px;
+  text-align: center;
+  color: #000958;
+  font-family: Sora;
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+
+.staff__list {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 35px;
+}
+
+.staff__image {
+  margin: 0 16px;
+  border-radius: 130px;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.staff__img {
+  position: relative;
+  z-index: 1;
+}
+
+.staff__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 266px;
+  bottom: 4px;
+  left: 0;
+  border-radius: inherit;
+  border-radius: 129.5px;
+  background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff__img {
+  border-radius: inherit;
+  width: 100%;
+}
+
+.staff__image::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translatex(-50%);
+}
+
+.staff__item:nth-child(1) .staff__image::after {
+  content: url(./image/feature-blue.svg);
+}
+
+.staff__item:nth-child(2) .staff__image::after {
+  top: 17px;
+  content: url(./image/feature-red.svg);
+  bottom: inherit;
+}
+
+.staff__item:nth-child(3) .staff__image::after {
+  content: url(./image/feature-orrange.svg);
+}
+
+.staff__item:nth-child(4) .staff__image::after {
+  top: 17px;
+  content: url(./image/feature-lightblue.svg);
+  bottom: inherit;
+}
+
+.staff__item:nth-child(2) .staff__image::before {
+  background: #ff997e;
+}
+
+.staff__item:nth-child(3) .staff__image::before {
+  background: #fabf3e;
+}
+
+.staff__item:nth-child(4) .staff__image::before {
+  background: #5bd6e2;
+}
+
+.staff__title {
+  margin-top: 29px;
+  color: #656689;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.staff__name {
+  margin-top: 14px;
+  color: #000958;
+  text-align: center;
+  font-family: Sora;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.staff__cta {
+  display: flex;
+  justify-content: center;
+}
+
+.staff__link {
+  text-align: center;
+  margin-top: 48px;
+  --height: 56px;
+  min-width: 193px;
+  border: 1px solid #ff5b2e;
+  color: #ff5b2e;
+}
